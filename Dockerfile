@@ -1,7 +1,9 @@
 # Must use a Cuda version 11+
-# FROM pytorch/pytorch:1.11.0-cuda11.3-cudnn8-runtime
 # Install linux packages
 
+# FROM pytorch/pytorch:1.11.0-cuda11.3-cudnn8-runtime
+
+# copy from (https://github.com/ultralytics/ultralytics/blob/main/docker/Dockerfile)
 FROM pytorch/pytorch:2.0.0-cuda11.7-cudnn8-runtime
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt update
