@@ -1,7 +1,6 @@
 # This file is used to verify your http server acts as expected
 # Run it with `python3 test.py``
 
-import os
 import requests
 from PIL import Image
 import numpy as np
@@ -35,15 +34,15 @@ if __name__ == '__main__':
     from time import time
     from dotenv import load_dotenv
 
-    # load_dotenv()
-    # api_key = os.getenv('BANANA_API_KEY')
-    # print('ApiKey: ', api_key)
-    # model_key = os.getenv('BANANA_MODEL_ID')
-    # print('ModelKey: ', model_key)
+    load_dotenv()
+    api_key = os.getenv('BANANA_API_KEY')
+    print('ApiKey: ', api_key)
+    model_key = os.getenv('BANANA_MODEL_ID')
+    print('ModelKey: ', model_key)
 
-    # for _ in range(7):
-    #     sample_inputs += sample_inputs
-    # print(len(sample_inputs))
+    for _ in range(7):
+        sample_inputs += sample_inputs
+    print(len(sample_inputs))
 
     model_inputs = {
         'inputs': sample_inputs
